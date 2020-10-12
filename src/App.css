@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper:before{
+  background:url('https://exumag.com/wp-content/uploads/2016/07/DC-vs-Marvel-t%C5%82o-1170x731.png');
+  background-size:cover;
+  filter:grayscale(80%);
+  color:white;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+
+}
+.formWrap{
+  display:flex;
+  width:100vw;
+  height:80vh;
+  justify-content: center;
+  align-items: center;
+
+}
+form{
+  border:1px solid white;
+  padding:15px;
+  background:rgba(29, 29, 29, 0.616);
+  border-radius:15px;
+  position: relative;
+  z-index: 100;
+  color: white;
+}
+legend{
+  margin:25px;
+  display:flex;
+  flex-direction: column;
+  
+}
+.radio-toolbar {
+  margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: rgb(14, 14, 14);
+    border:1px solid white;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.radio-toolbar label:hover {
+  background-color: white;
+  color:black;
+}
+
+
+
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: white;
+  color:black;
+}
+input[type="submit"]{
+  background:black;
+  border:1px solid white;
+  cursor:pointer;
+  color:white;
+  padding:5px 15px 5px 15px;
+}
+input[type="submit"]:hover{
+  background:white;
+  color:black;
+}
+h1{
+  position: relative;
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
+}
+
+.result{
+  position:relative;
+  background:rgba(0, 0, 0, 0.561);
+  width:50vw;
+  margin:0 auto;
+  top:50px;
+  padding:10px;
+}
+.result p{
+  color:white;
+}
+.img-wrap{
+  width:200px;
+  height:200px;
+  object-fit: contain;
+  display:flex;
+  justify-content: center;
+  margin:20px auto;
+  align-items: center;
+}
+.img-hero{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+}
