@@ -38,7 +38,7 @@ export default function UserInput({setUserGender,setUserHeight,setUserMember,set
                     <label htmlFor="seven">Neutral</label>
                 </div>
                </legend>
-               <legend>Chłop czy baba?
+               <legend>Gender?
                 <div className="radio-toolbar">
                     <input id="five" onClick={()=>setUserGender("Male")} type="radio" name="gender" value="male" />
                     <label htmlFor="five">Male</label>
